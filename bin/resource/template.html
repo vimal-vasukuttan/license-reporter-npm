@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="licenses.css">
+</head>
+<body>
+<h2>Project non-whitelisted dependencies</h2>
+<table>
+<tr>
+<th>Module</th>
+<th>License</th>
+<th>Repository</th>
+<th>Dependency Path</th>
+</tr>
+{{#license}}
+<tr>
+<td>{{module}}</td>
+<td>{{licenses}}</td>
+<td><a href={{repository}}>{{module}}-github-repository</a></td>
+<td>{{path}}</td>
+</tr>
+{{/license}}
+</table>
+</body>
+</html>

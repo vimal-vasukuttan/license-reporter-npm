@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const argv = require('yargs').argv
+const licenseCrawler = require('./licenseChecker.js')
+const reportOptions = {}
+reportOptions.onlyProduction = argv.onlyProduction
+reportOptions.genHtmlReport = argv.genHtmlReport
+reportOptions.failOnLicenseIssue = argv.failOnLicenseIssue
+licenseCrawler.genReport(reportOptions)
